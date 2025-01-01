@@ -57,7 +57,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: clamp(0.45rem, 1.1vw, 0.75rem);
-       column-gap: clamp(0.45rem, 1.1vw, 0.75rem);
+  column-gap: clamp(0.45rem, 1.1vw, 0.75rem);
 }
 .section-title .word-wrap {
   display: inline-block;
@@ -148,7 +148,7 @@ a:hover {
   height: 1.375rem;
   width: clamp(3.75rem, 8vw, 5.625rem);
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .site-logo.show {
   opacity: 1;
@@ -454,7 +454,7 @@ a:hover {
 }
 .product-item .product-img img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   background: #f2f2f2;
@@ -562,7 +562,7 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 30px;
   -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   margin-top: 30px;
 }
 .year-grid .year-icon {
@@ -579,8 +579,9 @@ a:hover {
 }
 .year-grid .year-icon img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 28px;
+  height: auto;
 }
 .year-grid .year-duration {
   font-family: "Merriweather Sans", serif;
@@ -626,15 +627,14 @@ a:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: left;
-     object-position: left;
+  object-position: left;
   animation: move 40s ease infinite alternate;
   -ms-animation: move 40s ease infinite alternate;
   -webkit-animation: move 40s ease infinite alternate;
   -moz-animation: move 40s ease infinite alternate;
 }
-
 @keyframes move {
   0% {
     transform-origin: bottom left;
@@ -696,9 +696,9 @@ a:hover {
 }
 .slider .slide img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 .slider .slide img,
 .slider .slide iframe,
@@ -1156,7 +1156,7 @@ a:hover {
   }
   .banner-section .banner-wrap picture img {
     -o-object-position: top center;
-       object-position: top center;
+    object-position: top center;
   }
   .section-title,
   .accordion .accordion-item .accordion-title h2 {

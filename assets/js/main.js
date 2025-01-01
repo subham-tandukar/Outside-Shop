@@ -113,9 +113,9 @@ animateTitle = () => {
 };
 animateTitle();
 
-tab = () => {
-  const tabItem = document.querySelectorAll(".tab-item");
-  const tabContent = document.querySelectorAll(".tab-content");
+tab = (tabName) => {
+  const tabItem = document.querySelectorAll(`.${tabName}-tab-item`);
+  const tabContent = document.querySelectorAll(`.${tabName}-tab-content`);
 
   const switchTab = (index) => {
     tabItem.forEach((item) => item.classList.remove("active"));
@@ -131,7 +131,16 @@ tab = () => {
     });
   });
 };
-tab();
+
+desktopTab = () => {
+  tab("desk");
+};
+desktopTab();
+
+mobileTab = () => {
+  tab("mob");
+};
+mobileTab();
 
 carousel = (carouselName, item) => {
   var swiper = new Swiper(`.${carouselName}-carousel`, {
